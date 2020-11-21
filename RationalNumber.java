@@ -9,10 +9,12 @@ public class RationalNumber extends RealNumber {
     else if (deno < 0) {
       numerator = nume * -1;
       denominator = deno * -1;
+      reduce();
     }
     else {
       numerator = nume;
       denominator = deno;
+      reduce();
     }
   }
 
