@@ -56,4 +56,8 @@ public class RationalNumber extends RealNumber {
     return ans;
   }
 
+  public RationalNumber divide(RationalNumber other) {
+    return multiply(other.reciprocal());
+  }
+
 }
