@@ -33,4 +33,8 @@ public class RationalNumber extends RealNumber {
     return recip;
   }
 
+  public boolean equals(RationalNumber other) {
+    return (numerator == other.getNumerator() && denominator == other.getDenominator());
+  }
+
 }
