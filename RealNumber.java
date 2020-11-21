@@ -28,5 +28,10 @@ public class RealNumber {
     return Math.abs((ans / oldNum) * 100);
   }
 
+  public RealNumber add(RealNumber other) {
+    RealNumber ans = new RealNumber(value + other.getValue());
+    return ans;
+  }
+
 
 }
