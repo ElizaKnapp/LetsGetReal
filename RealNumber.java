@@ -33,5 +33,9 @@ public class RealNumber {
     return ans;
   }
 
+  public RealNumber multiply(RealNumber other) {
+    RealNumber ans = new RealNumber(value * other.getValue());
+    return ans;
+  }
 
 }
