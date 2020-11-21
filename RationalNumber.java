@@ -45,7 +45,7 @@ public class RationalNumber extends RealNumber {
   }
 
   private static int gcd(int a, int b) {
-    if (b == 0) return a;
+    if (b == 0) return Math.abs(a);
     else return gcd(b, a % b);
   }
 
