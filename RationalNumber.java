@@ -50,8 +50,10 @@ public class RationalNumber extends RealNumber {
   }
 
   private void reduce() {
-    numerator = numerator / gcd(numerator, denominator);
-    denominator = denominator / gcd(numerator, denominator);
+    int oldNume = numerator;
+    int oldDeno = denominator;
+    numerator = numerator / gcd(oldNume, oldDeno);
+    denominator = denominator / gcd(oldNume, oldDeno);
   }
 
   public RationalNumber multiply(RationalNumber other) {
