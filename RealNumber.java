@@ -1,4 +1,4 @@
-public class RealNumber {
+public class RealNumber extends Number{
   private double value;
 
   public RealNumber (double v) {
@@ -11,16 +11,6 @@ public class RealNumber {
 
   public String toString() {
     return "" + getValue();
-  }
-
-  public boolean equals(RealNumber other) {
-    if (value == 0 && other.getValue() == 0) {
-      return true;
-    }
-    else if (percentDifference(other.getValue(), value) < 0.001) {
-      return true;
-    }
-    else return false;
   }
 
   public double percentDifference(double newNum, double oldNum) {
