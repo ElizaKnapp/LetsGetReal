@@ -10,4 +10,9 @@ public abstract class Number {
     }
     else return false;
   }
+
+  public double percentDifference(double newNum, double oldNum) {
+    double ans = newNum - oldNum;
+    return Math.abs((ans / oldNum) * 100);
+  }
 }
