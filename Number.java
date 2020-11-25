@@ -15,4 +15,10 @@ public abstract class Number {
     double ans = newNum - oldNum;
     return Math.abs((ans / oldNum) * 100);
   }
+
+  public int compareTo(Number other) {
+    if (equals(other)) return 0;
+    else if (getValue() < other.getValue()) return -1;
+    else return 1;
+  }
 }
